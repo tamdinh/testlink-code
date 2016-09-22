@@ -2942,7 +2942,7 @@ function html_table_of_custom_field_values($id,$child_id,$tproject_id=null)
               " modification_ts = ";
               
       $nullTS = $this->db->db_null_timestamp();
-      $sql .= is_null($nullTS) ? " NULL " : " {$nullTS} ";
+      $sql .= is_null($nullTS) ? " {$db_now} " : " {$nullTS} ";
       $sql .=  " WHERE id = {$parent_id} ";
       $this->db->exec_query($sql);
       return $ret;

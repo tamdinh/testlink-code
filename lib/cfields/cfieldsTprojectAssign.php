@@ -62,7 +62,7 @@ foreach($allowed_nodes as $verbose_type => $type_id)
   $gui->cf_allowed_nodes[$type_id] = lang_get($verbose_type);
 }
 
-\Kint::dump($gui);
+//\Kint::dump($gui);
 $smarty = new TLSmarty();
 $smarty->assign('gui',$gui);
 $smarty->display($templateCfg->template_dir . $templateCfg->default_template);
@@ -111,7 +111,7 @@ function init_args(&$dbHandler)
     $args->tproject_name = $dummy['name'];
   }
   
-  \Kint::dump($args);
+  //\Kint::dump($args);
   return $args;
 }
 

@@ -15,7 +15,7 @@
  *
  * @internal revisions
  * @since 1.9.15
- **/
+**/
 
 /**
  * get home URL
@@ -464,7 +464,6 @@ function checkSchemaVersion(&$db)
     case 'DB 1.9.11':
     case 'DB 1.9.12':
     case 'DB 1.9.13':
-    case 'DB 1.9.14':
       $result['msg'] = $manualop_msg;
     break;
 

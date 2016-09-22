@@ -213,10 +213,10 @@ class database
       echo "<pre>            Having this additional Information could be useful for reporting </pre>";
       echo "<pre>            issue to development TEAM. </pre>";
       echo "<pre> ============================================================================== </pre>";
-      
+      echo $message;
       if(defined('DBUG_ON') && DBUG_ON == 1)
       { 
-        echo "<pre>"; debug_print_backtrace(); echo "</pre>";
+        echo "<pre>"; debug_print_backtrace(); echo "</pre>"; 
         die();
       }   
       echo "<pre>"; debug_print_backtrace(); echo "</pre>";
@@ -225,7 +225,8 @@ class database
       //else
       //{
       //  echo "<pre>"; debug_print_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS); echo "</pre>";
-      //}  
+      //}
+  
       echo "<pre> ============================================================================== </pre>";
       $t_result = false;
     }

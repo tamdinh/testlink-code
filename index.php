@@ -11,6 +11,7 @@
  * @internal revisions
  *
 **/
+
 require_once('lib/functions/configCheck.php');
 checkConfiguration();
 require_once('config.inc.php');
