@@ -82,10 +82,19 @@ window.onload=function()
   {include file="inc_msg_from_array.tpl" array_of_msg=$gui->securityNotes arg_css_class="warning"}
 {/if}
 
-{* ----- Right Column ------------- *}
-{include file="mainPageRight.tpl"}
+        {* ----- Right Column ------------- *}
+        {include file="mainPageRight.tpl"}
 
-{* ----- Left Column -------------- *}
-{include file="mainPageLeft.tpl"}
+       {* ----- Left Column -------------- *}
+       {include file="mainPageLeft.tpl"}
+
+       <div class="vertical_menu" style="float: left; width:50%" align="center">
+            Mockup UI-Chọn nút Play để xem.
+	    <a href="https://mockingbot.in/workspace#apps/p2717f57c923a4908d2e034"> 
+		Click vào đây để xem full
+            </a>
+		
+            <iframe src="https://mockingbot.in/app/a19cdc3684d3d29c31bd1511aec3db54df3724ad/embed" width="839" height="422" allowTransparency="true" frameborder="0"></iframe>
+       </div>
 </body>
 </html>
